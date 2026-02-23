@@ -2,23 +2,6 @@
   const wall = document.getElementById("cat-wall");
   if (!wall) return;
 
-  // Echte Katzenbilder (Wikimedia Commons) – direkte Datei-Links via Special:FilePath
-  // Du kannst jederzeit weitere ergänzen.
-  const catUrls = [
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Cat%20March%202010-1a.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Tabby%20cat%20with%20visible%20nictitating%20membrane.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Savannah%20Cat%20portrait.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Kittyply%20edit1.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Cat%20poster%201.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Black_cat_%28Felis_catus%29.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Closeup_of_cat.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Cat%20%28Felis%20catus%29%20sleeping.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Cat%20in%20grass.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/European_shorthair_cat.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Cat_poster_2.jpg",
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Tabby_cat_portrait.jpg"
-  ];
-
   function shuffledCopy(arr) {
     const a = arr.slice();
     for (let i = a.length - 1; i > 0; i--) {
