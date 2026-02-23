@@ -1,1 +1,129 @@
+:root{
+  --text: #2b2b2b;
+  --muted: #6b5e55;
+
+  /* Cozy Farbtöne */
+  --card: rgba(255, 248, 240, 0.82);
+  --card-strong: rgba(255, 248, 240, 0.92);
+
+  --border: rgba(120, 90, 70, 0.18);
+  --shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
+}
+
+*{ box-sizing: border-box; }
+html, body{ height: 100%; }
+
+body{
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  color: var(--text);
+  overflow-x: hidden;
+
+  background: url("../images/Katzen-Collage.webp") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Dunkles Overlay für Lesbarkeit */
+.overlay{
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: rgba(30, 20, 15, 0.55);
+  backdrop-filter: blur(4px);
+}
+
+/* Layout */
+.wrap{
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 48px 18px;
+}
+
+/* ✨ Cozy Card */
+.card{
+  width: min(880px, 100%);
+  background: var(--card);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+  padding: clamp(24px, 4vw, 48px);
+  transition: all 0.3s ease;
+}
+
+.header h1{
+  margin: 0 0 8px 0;
+  font-size: clamp(30px, 4vw, 46px);
+  letter-spacing: -0.02em;
+}
+
+.subline{
+  margin: 0;
+  color: var(--muted);
+  font-size: clamp(15px, 1.6vw, 19px);
+}
+
+.content{
+  margin-top: 22px;
+  line-height: 1.7;
+  font-size: clamp(16px, 1.8vw, 19px);
+}
+
+.content p{
+  margin: 0 0 16px 0;
+}
+
+/* Highlight-Box gemütlicher */
+.highlight{
+  margin-top: 22px;
+  padding: 16px 18px;
+  border-left: 4px solid rgba(140, 100, 70, 0.5);
+  background: var(--card-strong);
+  border-radius: 14px;
+  font-weight: 500;
+}
+
+/* Footer */
+.footer{
+  margin-top: 28px;
+}
+
+.divider{
+  height: 1px;
+  background: rgba(120, 90, 70, 0.2);
+  margin: 20px 0 18px;
+}
+
+.signoff{
+  margin: 0 0 12px 0;
+  color: var(--muted);
+}
+
+/* Namen */
+.names{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px 14px;
+}
+
+.names li{
+  padding: 12px;
+  border-radius: 14px;
+  background: rgba(255, 248, 240, 0.65);
+  border: 1px solid rgba(120, 90, 70, 0.15);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.names li:hover{
+  transform: translateY(-2px);
+  background-color: #F5DA8C;
+  transition: all 0.1s ease-in;
+}
+
+
 
