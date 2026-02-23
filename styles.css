@@ -124,6 +124,45 @@ body{
   background-color: #F5DA8C;
   transition: all 0.1s ease-in;
 }
+/* Sticker allgemein */
+.sticker{
+  position: fixed;
+  width: 120px;
+  z-index: 5;
+  pointer-events: none;
+  transition: transform 0.4s ease;
+  animation: float 6s ease-in-out infinite;
+}
 
+/* Positionen */
+.sticker-left{
+  top: 18%;
+  left: 4%;
+}
+
+.sticker-right{
+  top: 22%;
+  right: 4%;
+}
+
+.sticker-bottom{
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Schwebe-Animation */
+@keyframes float{
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Mobile kleiner */
+@media (max-width: 768px){
+  .sticker{
+    width: 70px;
+  }
+}
 
 
